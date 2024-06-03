@@ -1,5 +1,5 @@
 import React from "react";
-import { MDBRow, MDBCol, MDBIcon } from "mdbreact";
+import { MDBRow, MDBCol, MDBIcon, MDBInputGroup } from "mdbreact";
 import { categories } from "../../../../services/fakeDb";
 
 export const Header = ({ setShow, setIsViewProductInformation }) => {
@@ -9,16 +9,18 @@ export const Header = ({ setShow, setIsViewProductInformation }) => {
         <h6 style={{ fontWeight: 500 }}>Product List</h6>
       </MDBCol>
       <MDBCol className="d-flex justify-content-center">
-        <select
-          className="form-control"
-          style={{ height: 42, borderRadius: 20 }}
-        >
-          {categories.map((categorie, index) => (
-            <option value={categorie} key={index}>
-              {categorie}
-            </option>
-          ))}
-        </select>
+        <MDBInputGroup material>
+          <select
+            className="form-control"
+            style={{ height: 42, borderRadius: 20 }}
+          >
+            {categories.map((categorie, index) => (
+              <option value={categorie} key={index}>
+                {categorie}
+              </option>
+            ))}
+          </select>
+        </MDBInputGroup>
       </MDBCol>
       <MDBCol className="d-flex justify-content-end" md="4">
         <div className="cashier-search-cotaniner ">

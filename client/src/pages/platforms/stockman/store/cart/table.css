@@ -1,0 +1,8 @@
+.multiline-ellipsis {
+  display: -webkit-box; /* Flexbox para sa WebKit browsers */
+  -webkit-box-orient: vertical; /* Itakda ang orientation ng box sa vertical */
+  -webkit-line-clamp: 2; /* Limitahan ang text sa dalawang linya */
+  overflow: hidden; /* Nagtatago ng anumang text na lalabas sa container */
+  height: 3em; /* Tiyaking ang height ay sapat para sa dalawang linya */
+  line-height: 1.5em; /* Itakda ang taas ng linya */
+}

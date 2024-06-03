@@ -17,6 +17,14 @@ const modelSchema = new mongoose.Schema(
       type: Number,
     },
 
+    variant1: {
+      type: String,
+    },
+
+    variant2: {
+      type: String,
+    },
+
     kilo: {
       type: Number,
     },
