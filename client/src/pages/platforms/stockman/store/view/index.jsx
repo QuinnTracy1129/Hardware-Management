@@ -99,6 +99,8 @@ const View = ({ isView, toggleView, selected, setIsView }) => {
     }
   };
 
+  console.log('test')
+
   return (
     <MDBModal isOpen={isView} toggle={toggleView} backdrop size="xl">
       <MDBModalBody className="mb-0">
